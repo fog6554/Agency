@@ -1,0 +1,400 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <meta http-equiv="content-type" content="text/html; charset=utf-8">
+      <title>| Web na m�ru </title> 
+      <meta name="description" content="?"/> 
+      <meta name="robots" content="index, follow">
+      <meta charset="UTF-8">
+      <meta name="keywords" content="">
+      <link rel="shortcut icon" href=".ico" type="image/x-icon">  
+      <script src="https://kit.fontawesome.com/d60d428278.js" crossorigin="anonymous"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+      nav {
+        background:#ff7d00;
+        text-align:center;
+        
+      }
+      :root{
+      --menumar:3vh;
+      }
+      #m-n01{
+      color:white;
+      font-family:'Muli',sans-serif;
+      font-weight:bold;
+      font-size: 3vh;
+      padding:0;
+      margin:0;
+      float:none;
+      margin-right:calc( var(--menumar) + 3vh);
+      }
+      #arr2{
+      display:none;
+      animation-name: menu-div;
+      animation-duration: 1s;}
+      }
+      .dropbtn{
+      }
+      #di01{
+        padding:10vw;
+      }
+      .m-button{
+        //margin:3vh;
+        background:transparent;
+        border:none;
+        color:white;
+        font-size:2vh;
+        display:inline-block;
+        margin-left:var(--menumar);
+        float:left;
+        width:3vh; 
+      }
+      .m-button i{
+        color:white;
+        font-size:3vh;}
+      @keyframes menu-div {
+        0% {transform: translate(-100%, 0px);}/*druhe cislo nazacatku v minusu a doluv plusu je animace odshora dolu*/
+        20% {transform: translate(-1%, 0px);}
+        100% {transform: translate( 0px, 0px);}
+      }
+      .content a{
+          color:white;
+          text-decoration:none;
+          font-family:'Muli',sans-serif;
+          font-weight:bold;
+          font-size:7vw;
+          padding:1vw;
+            
+      }.content a::after{
+      content:"\f105";
+      float:right;
+        font-family: "Font Awesome 5 Free";
+      }
+    #thispage::after{
+    content:" ";
+    }
+    .uv1 {
+       text-decoration: none; 
+       position: relative; 
+     }   
+
+    .uv1::after {
+        position: absolute;
+        content: '';
+        height: 2px;
+        bottom: -4px; 
+        margin: 0 auto;
+		left: 0;
+        right: 0;
+        width: 80%;
+        background: orange;
+        transition:.5s;
+    }
+	 
+
+	 /* optional hover classes used with anmiation */
+	  .uv1:hover:after {
+		  width: 90%;
+		  background: gold;
+    }
+    .uv2 {
+       text-decoration: none; 
+       position: relative; 
+     }   
+
+    .uv2::after {
+        position: absolute;
+        content: '';
+        height: 2px;
+        bottom: -2px; 
+        margin: 0 auto;
+		    left: 0;
+        right: 0;
+        width: 80%;
+        background: orange;
+        transition:.5s;
+    }.uv2:hover:after{
+      width: 90%;
+		  background: orange;
+    }
+      .content{
+          margin-top:2.4vh;
+          animation-name: menu-div;
+          animation-duration: 1s;
+          display: none;
+          z-index:1;
+          background:#555;
+          width:100%;
+           height:93vh;/*100-vyskamenu (10vh)*/
+           position:absolute;
+           text-align:left;
+           touch-action: none; 
+           /*Bez tohohle pujde scrollovat na obsah pod menu, tohle ho blokne*/
+           
+      /*position:aboslute - stranka se nehne, bez toghohle se posune dolu;*/
+      }
+      .dropdiv{
+        width:100%;
+        position: relative;
+         display: inline-block;
+      }
+       
+      
+    
+       
+      input[type=checkbox] {
+        display: none;
+        color:;
+      }
+      #overlay{
+      display:none;}
+      
+      input[type=checkbox]:checked ~ .content {
+        display: block;
+    }
+    input[type=checkbox]:checked ~ .m-button #arr1{
+        display:none;
+    }input[type=checkbox]:checked ~ .m-button #arr2{
+        display:inline;
+    }   
+      </style>
+  <style>
+  #primary{
+    background:;
+    padding:.1vh;
+    color:#252525;
+    text-align:center;
+  }
+  #primary .tit{
+        font-family:'Muli',sans-serif;
+    }
+  #primary p {
+        font-family:'Muli',sans-serif;
+        font-size: 17px;
+    }
+  #di02{
+    
+    padding:10vw;
+    text-align: center;
+  }
+  .di-di1{
+    width: 64vw;
+    float:none;
+
+    border: none;
+    border-radius: .4em;
+    background-color: #F0F0F0;
+    padding: 8vw;
+    text-align: center;
+  }
+  .di-di-2{
+    border: none;
+    border-radius: 100%;
+    background-color: rgb(224, 220, 220);
+    height: 40vw;
+    width: 40vw;
+    margin-right:12vw;/*50%-18*/
+    margin-left: 12vw;
+    position: relative;
+     
+  }#di-i{
+    position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);
+    color:#ff7d00;
+    font-size: 20vw;
+  }.di-di-p{
+    max-width: 100%;
+  } .di-di2{
+    width: 64vw;
+    float:none;
+
+    border: none;
+    border-radius: .4em;
+    background-color: #ffff;
+    padding: 8vw;
+    text-align: center;
+    transition:.9s;
+
+  }.di-di2:hover{
+    transition:.9s;
+    transform: scale(1.1);
+  }
+  .di-di2-h3{
+    border-radius: .4em;
+    border: 3px solid #ff9000;
+    font-size: 155%;
+  }.di-di-b{
+    border: none;
+    border-radius: .4em;
+    color: white;
+    background: #33ccff;
+    padding: 2vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    font-size: 120%;
+  }.di-di-b-t{
+    font-weight: bold;
+    font-size: 120%;
+    margin: ;
+  }
+
+  </style>
+  <style>
+  </style>    
+  </head>
+  <body style="margin:0;width:100%;">
+    <nav style="height:4vh;padding-top:2vh;padding-bottom:2vh;">
+    <!--
+      <div class="dropdiv">
+        <button class="dropbtn"><i id="arr1" class="fa fa-reorder"></i><i id="arr2"class="fa fa-remove"></i></button> 
+        <div class="content">
+            <div id="di02">
+                <i class="fa fa-arrow-left"></i>
+            </div>
+            <div id="di01">
+              <a href="">s1</a><br>
+              <a href="">s2</a><br>
+              <a href="">s3</a><br>
+              <a href="">s4</a><br>
+            </div>  
+        </div>
+      </div>-->
+      <input type="checkbox" id="dropbtn"/>
+      <label class="m-button"for="dropbtn" style="line-height:5vh;"><i id="arr1" class="fa fa-reorder" style="font-size:200%;"></i><i id="arr2"class="fa fa-remove" style="font-size:200%;"></i></label>
+      <span id="m-n01">Name</span>
+      <div class="content">
+          <div id="di01">
+            <br>
+            <a href="" class="a002" id="thispage"><span class="uv1">Úvodní st</span>ránka</a><br>
+            <a href="">Webové Stránky</a><br>
+            <a href="">s3</a><br>
+            <a href="">Kontakt</a><br>
+          </div>  
+      </div>  
+    </nav> 
+    <div id="primary" >
+        <div style="position:relative;text-align:center;">
+          <img style="width:100%;opacity: 0.65;" src="bg.jpg">
+          <h1 class="tit" style="position: absolute;top: 45%;left: 50%;transform: translate(-50%, -50%);background:rgba(0,0,0,0.2);border:0;border-radius:.4em;padding:.4em;font-size: 7vw;">Web který dokáže <span class="uv1">oslovit</span></h1>
+        </div>
+        <br>
+        <h3 class="tit">... není samozřejmostí.</h3>
+        <p style="max-width: 80vw;margin:10vw;text-align: left;"> <span class="uv2">U nás tomu je jinak.</span> Naše webové stránky přitahují zákazníky, ať už máte firmu či podnikáte na sebe. Je to stejné jako magnet, prostě neodolatelně přitažlivé. Takhle by mohl vypadat:</p>
+        <img src="gf1.gif" style="width:100%;">
+        <p style="max-width: 80vw;margin:10vw;text-align: left;"> No a proč ne? V čem je háček? A proč tam nějaký hledat, když tam žádný není? Jde jen o to mít webové stránky <span class="uv2">kvalitní</span>. Toho se u nás nemusíte bát, na kvalitu i Vaši peněženku dbáme a projekty dodáváme opravdu hotové, kvalitní a neuspěchané.</p>
+        <p style="max-width: 85vw;margin:7.5vw;">Co můžete od webové stránky od nás čekat?</p>
+        <div id="di02">
+          <div class="di-di1">
+            <div class="di-di-2">
+              <i class="fas fa-mobile-alt" id="di-i"></i>
+            </div>
+            <div class="di-di-p">
+              <p style="font-weight: bold;font-size: 120%;" class="uv1">Responzivní Desing</p>
+              <p>Dnes na prohlédnutí webové stránky více než <span class="uv2">53</span>% uživatelů používá mobil, proto musí být web pěkný na počítači ale také na telefonu.</p>
+            </div>    
+          </div>
+          <br>
+          <div class="di-di1">
+            <div class="di-di-2">
+              <i class="fas fa-rocket" id="di-i"></i>
+            </div>
+            <div class="di-di-p">
+              <p style="font-weight: bold;font-size: 120%;" class="uv1">Rychlost</p>
+              <p>Nikoho nebaví čekat na načtení stránky <i class="fas fa-spinner fa-spin"></i> Proto volíme rychlý webhosting, u kterého se vám to nestane.</p>
+            </div>    
+          </div>
+          <br>
+          <div class="di-di1">
+            <div class="di-di-2">
+              <i class="fas fa-chart-bar" id="di-i"></i>
+            </div>
+            <div class="di-di-p">
+              <p style="font-weight: bold;font-size: 120%;" class="uv1">SEO</p>
+              <p>Aby Váš web byl opravdu vidět, musí mít SEO optimalizaci. To ty naše mají <i class="fas fa-check"></i></p>
+            </div>    
+          </div>
+          <br>
+          <div class="di-di1">
+            <div class="di-di-2">
+              <i class="fas fa-lock" id="di-i"></i>
+            </div>
+            <div class="di-di-p">
+              <p style="font-weight: bold;font-size: 120%;" class="uv1">Bezpečnost</p>
+              <p>Váš web i bude dobře zabezpečeý, to od A až po Z.</p>
+            </div>    
+          </div>
+          <br>
+          <div class="di-di1">
+            <div class="di-di-2">
+              <i class="fas fa-balance-scale" id="di-i"></i>
+            </div>
+            <div class="di-di-p">
+              <p style="font-weight: bold;font-size: 120%;" class="uv1">Cena</p>
+              <p>Cena bude vždy výhodná, úměrná práci ale hlavně Vaší spokojenosti. Neděláme předražené blbosti, a na všem se jde domluvit <i class="far fa-handshake"></i> </p>
+            </div>    
+          </div>
+          <br>
+          <div class="di-di1">
+            <div class="di-di-2" style="background:linear-gradient(90deg,#ffc600,#ff7d00);">
+              <i class="fas fa-user" id="di-i" style="color:white !important;"></i>
+            </div>
+            <div class="di-di-p" >
+              <p style="font-weight: bold;font-size: 120%;" class="uv1">Dojem</p>
+              <p>Snažíme se weby dělat co nejhezčí, přehledné a  uživatelsky přívětivé. Vzniká tím větší pravděpodobnost že se uživatel vrátí a nakoupí právě u vás <i class="fas fa-user-check"></i> </p>
+            </div>    
+          </div>
+          <br>
+        </div>
+        <h3 class="tit">No, a kolik to může stát?</h3>
+        <p style="max-width: 80vw;margin: 10vw;text-align: left;color:#6e6e6e:">Jelikož děláme webové stránky na míru, každý projekt je jedinečný a potřebuje něco jiného, ale zase chápeme že je potřeba alespoň orientční ceník. Vše je ale na domluvě <i class="far fa-handshake"></i>, pokud máte omezený rozpočet lze to udělat i levněji <i class="far fa-smile"></i>
+        <div style="background:linear-gradient(180deg,#ffc600,#ff7d00,#ff5000); " id="di02">
+          <div class="di-di2">
+            <h3 class="tit di-di2-h3" >Classic</h3>
+            <br>
+            <div style="color:#5e5e5e;">
+            <p style="font-size: 150%;"><b>5 podstránek</b></p>
+            <p style="font-size: 150%;"><b>Kontaktní formulář</b></p>
+            <p style="font-size: 150%;"><i class="fas fa-check" style="color:limegreen;"></i> <b> Mobile friendly</b></p>
+            </div>
+            <p style="font-size:180%;"><i class="fas fa-" style="color:limegreen;"></i> <b> <span style="font-size: .7em;vertical-align:top;">Od</span> <span class="uv2">2499 Kč</span></b></p>
+            <br><br>
+            <button class="di-di-b"><span class="di-di-b-t">Více</span></button>
+          </div>
+          <br>
+          <br>
+          <div class="di-di2">
+            <h3 class="tit di-di2-h3" style="border:3px solid #66fff3;">Malá firma</h3>
+            <br>
+            <div style="color:#5e5e5e;">
+            <p style="font-size: 150%;"><b>8 podstránek</b></p>
+            <p style="font-size: 150%;"><b>Základní optimalizace pro vyhledávače</b></p>
+            <p style="font-size: 150%;"><i class="fas fa-check" style="color:limegreen;"></i> <b> Vše z Classic</b></p>
+            </div>
+            <p style="font-size:180%;"><i class="fas fa-" style="color:limegreen;"></i> <b> <span style="font-size: .7em;vertical-align:top;">Od</span> <span class="uv2"> 3999 Kč</span></b></p>
+            <br><br>
+            <button class="di-di-b" style="background: #699ff1;"><span class="di-di-b-t">Více</span></button>
+          </div>
+          <br>
+          <br>
+          <div class="di-di2">
+            <h3 class="tit di-di2-h3" style="border:3px solid #666fff;">Střední firma</h3>
+            <br>
+            <br>
+            <div style="color:#5e5e5e;">
+            <p style="font-size: 150%;"><b>10 podstránek</b></p>
+            <p style="font-size: 150%;"><i class="fas fa-lock" style="color:#555;"></i><b> Pokročilé zabezpečení</b></p>
+            <p style="font-size: 150%;"><i class="fas fa-poll" style="color:#ff7d00;"></i> <b> Pokročilé SEO</b></p>
+            <p style="font-size: 150%;"><i class="fas fa-clipboard-check" style="color:#666fff;"></i> <b> Jakékoli přídavné prvky</b></p>
+            <p style="font-size: 150%;"><i class="fas fa-check" style="color:limegreen;"></i> <b> Vše z balíčku pro Malé firmy</b></p>
+            </div>
+            <p style="font-size:180%;"><i class="fas fa-" style="color:limegreen;"></i> <b> <span style="font-size: .7em;vertical-align:top;">Od</span> <span class="uv2">8999 Kč</span></b></p>
+            <br><br>
+            <button class="di-di-b" style="background: linear-gradient(90deg,#66fff9,#666fff);"><span class="di-di-b-t">Více</span></button>
+          </div>
+        </div>
+        <p style="max-width: 80vw;margin:10vw;text-align:left;">Vyberete si? </p>  
+        <p style="max-width: 80vw;margin: 10vw;text-align: left;color:#6e6e6e; font-size: 120%;">Finální cena může být jiná, i menší, podle toho co budete opravdu potřebovat. Ve všech balíčcích je také započítán <span class="uv2">email</span> s vlastní doménou (např. info@domena.cz). Základní počet je jeden, ale někdo ocení mnohem více, to není problém. <i class="fas fa-envelope"></i> <br><br>Pokud by vás zajímalo kolik by stál váš vysněný web, napište nám! Není to závazné, a ano, slibujeme že vám nebudeme posílat žádnou reklamu. <i class="far fa-smile"></i></p>
+    </div>     
+  </body>
+</html>
