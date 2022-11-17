@@ -6,7 +6,7 @@ import keyboard
 time.sleep(5)
 
 for i in range(100):
-    keyboard.write('Umri')
+    keyboard.write('s')
     pyautogui.press("tab")
     pyautogui.press("tab")
     pyautogui.press("tab")
