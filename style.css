@@ -787,6 +787,7 @@ input[type=checkbox]:checked ~ .m-button #arr2 {
 #circles {
     height: 10rem;
     width: 100%;
+    overflow-x: hidden;
 }
 
 @media screen and (min-width: 900px) {
@@ -819,14 +820,13 @@ input[type=checkbox]:checked ~ .m-button #arr2 {
 
     #footer-info {
         text-align: left;
-        padding: 4rem;
+        padding: 4%;
         padding-bottom: 1rem;
         /*background: linear-gradient(180deg,#ffc600,#ffc600, #ff9000);*/
         background: #5e5e5e;
         position: absolute;
-        width:100vw;
+        width:92%;
         top:30rem;
-        padding: 0;
     }
 
     #footer-info #info-div {
