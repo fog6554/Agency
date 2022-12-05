@@ -100,8 +100,8 @@ nav {
     text-decoration: none;
     font-family: 'Muli', sans-serif;
     font-weight: bolder;
-    font-size: 5vw;
-    padding: 1vw;
+    font-size: calc(1em + 1vw);
+    padding: 6vw;
 
 }
 
@@ -867,3 +867,37 @@ input[type=checkbox]:checked ~ .m-button #arr2 {
 
 
 Ctrl Alt L - zarovna radky
+Ctrl D - duplikace
+
+ 20 px = 1em
+ 90% = 0.9em
+ 75% = 0.75em
+muzeme cely web udelat v emech nebo remech, a pak jen rict ze na telefonu bude font size
+letter spacing
+
+           flex end
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+<div class="menuu">
+    <div>
+        <div>home</div>
+        <div>about</div>
+    </div>
+    <div>sing in</div>
+</div>
+  .menu{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1rem; - lepsi nez margin, margin nefunguje vsude a je problem s vetsini obrazkovaky tadzy ne
+    padding:1rem 5rem;
+     }
+  .menu :first-child{
+      display: flex;
+      flex-direction: row;
+      column-gap: 1rem;
+  }
+https://text-compare.com/
+https://lesscss.org/
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
+ https://thisthat.dev/border-box-vs-content-box/
