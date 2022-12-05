@@ -822,8 +822,8 @@ input[type=checkbox]:checked ~ .m-button #arr2 {
         text-align: left;
         padding: 4%;
         padding-bottom: 1rem;
-        /*background: linear-gradient(180deg,#ffc600,#ffc600, #ff9000);*/
-        background: #5e5e5e;
+        background: linear-gradient(180deg,#ffc600,#ffc600, #ff9000);
+
         position: absolute;
         width:92%;
         top:30rem;
